@@ -7,3 +7,6 @@
 [submodule "projects/picard"]
 	path = projects/picard
 	url = https://github.com/souvik1997/picard
+[submodule "blog/butane-jekyll-theme"]
+	path = blog/butane-jekyll-theme
+	url = https://github.com/souvik1997/butane-jekyll-theme

@@ -1,0 +1,16 @@
+# Site settings
+title: Souvik's Blog
+author: Souvik Banerjee
+email: souvik1997@gmail.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://souvik.me" # the base hostname & protocol for your site
+github_username:  souvik1997
+
+# Build settings
+include: [_pages]
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "fenced_code_blocks"]
+permalink: /:title
+sass:
+    style: compressed
