@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Disallow: /secure/
+Disallow: /piwik/
+Disallow: /gitweb/
+Disallow: /squirrelmail/
+Disallow: /cgit/
+
+User-agent: TurnitinBot
+Disallow: /
