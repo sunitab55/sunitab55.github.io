@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/souvik
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://souvik.me
+  * I am souvik (https://keybase.io/souvik) on keybase.
+  * I have a public key with fingerprint 3962 5E83 0C16 F40C BFC4  F6E9 362B 66E5 EEF1 920C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101fd119a063e5697e5fcbfeba7b26857ee870afb8afc3e1340cc154e74d40114d50a",
+            "fingerprint": "39625e830c16f40cbfc4f6e9362b66e5eef1920c",
+            "host": "keybase.io",
+            "key_id": "362b66e5eef1920c",
+            "kid": "0101fd119a063e5697e5fcbfeba7b26857ee870afb8afc3e1340cc154e74d40114d50a",
+            "uid": "e0c6607b13ad3794f93a9dddfdd15419",
+            "username": "souvik"
+        },
+        "service": {
+            "hostname": "souvik.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468301574,
+    "expire_in": 157680000,
+    "prev": "f02b4fce7677a82010cf491431864692ccc4f023bb07c4b799418703d76ce389",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUntMHEUcPjigWKCSighypWFRBCTc7u3ePgAtFyuNxoZHsRQbOfcxQ7cHt8ft
+glBEo0EbWh4ttrUYQQ1eE2uhXCA+AKuCJcTGQLBCaUWtyuOihQISLTTFWaJ/mPin
+88/M/Ob7vvl+38yxMKMh2I9+GE7PLzaH+l3yCYaC2pdDqjFBkaqwtGrMATYmUCIB
+VbM7ZAlLw3ACJ6BEEByP0ySw0hwDrFAUIBB4RrDQrJUBgGVwHgosD0USECSFiyJh
+pQBDSRROEJRkxXksBYOysxi4XW7ZqSFZkqMtVsCSuEjQEDEEKFKQBhxJWwSaBlYA
+IMFZcBERDyiqzkDmBF4FqbKCamhj37D3H/j/2Xf5hhzARZrGGYEgeYlkOApyJM9J
+kgQlCXEITgeqwO3kSwFCq0p5hezAalIwVKuQRaDHqvfxr/NUtE7BXG5FU0SlBJUP
+aJpLTdNpWpVLxz0PBPvfCnZBdkooQsSoAG5VVpxYGoGQoibrkgRFozAJK0OlYKDS
+JbuBXdYRVoZmcTT0e0AFkoS4RaCgCBiaYfbwrAXlJEKKIyiSYGmK5iyiiF4Ct5CC
+gDMiJTAcRxEoKFJiaBGQrN6pCsqcCpZGIp98sd6OXOzktXI3wGo21/mbAgx+wYag
+QH/9cxk23xX+z4+Lk+9eP5h9Yysx9Hm9WSBfNT/WVnftvryfft6y8zlftHmnreeq
+xxtZmX//19+tRZZ8Iw+L7L6yXw8POW6bOnuzVtKbTat5RV/1lc2f8xt5IV5OuP7s
+lKAkV2WMVya8v/x9gPOLy32wu90rjXsCwKGorqzfHIMJJamw6Z6m4Z7e2JiGoBc3
+DQ5ND0eftexYyhFs3+Zur5rMyjxyOPrx8Gqjcftcx5e+2iPrDd108KDTU9PIzSWZ
+bRlR0yu2wm54YVunbW/BR/1NJwt338xsnnngz/n19MTWxS3exQkQ2Tu0P+wE16A2
+FxnPj2inu/LwldHuwclXfrGFZOf/oZw/I/YOn1LuPBqTf3Vr4c23syNcoZsaR0L6
+Xju9P2DX7Mi2Q4lLYe33hpZ6IkPn3VPvBJnO9e+O2veGb+ryS0uB8R4PY32yADYk
+jrXF7e069qGWkbRg5J6If70ltty//c7vEW+tH62YyImdzLE/NK59MuZbNi+8l1sX
+TyTPfxaZ1HE9ZXqsZmbuoNFdP9q28rE2nVHU05ItZrYkei/u+HFg1nDxmerbuR3L
+DtOtltrVwiuZgXVtlrDMmXT21kJO/IPqRNsH3qDjCTeOe8JLG7MqYUiQ780fYh5Z
+a7k2MJv67vJw6dMqfkkx16+aRmHrwMBZ54Wn4j7tWWvFT1wp7nf7Je/piGCr8s6c
+6gz3zg78BQ==
+=wund
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/souvik
+
+==================================================================
