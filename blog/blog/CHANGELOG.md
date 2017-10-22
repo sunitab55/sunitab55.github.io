@@ -1,1 +1,0 @@
-../butane-jekyll-theme/CHANGELOG.md
