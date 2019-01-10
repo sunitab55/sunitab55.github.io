@@ -61,16 +61,24 @@ fn handle_static(req: HttpRequest<Arc<State>>) -> HttpResponse {
 }
 
 fn handle_resume(req: HttpRequest<Arc<State>>) -> HttpResponse {
-    use std::net::{AddrParseError, SocketAddr};
+    use std::net::{AddrParseError, IpAddr, SocketAddr};
 
     let timestamp = time::now().to_timespec();
     let state = req.state().clone();
     match req.connection_info().remote() {
         Some(remote_host) => {
-            let remote: Result<SocketAddr, AddrParseError> = remote_host.parse();
-            match remote {
-                Ok(remote) => {
-                    let ip: String = remote.ip().to_string();
+            let ip: Option<IpAddr> = {
+                let socket_remote: Result<SocketAddr, AddrParseError> = remote_host.parse();
+                let ipaddr_remote: Result<IpAddr, AddrParseError> = remote_host.parse();
+                match socket_remote {
+                    Ok(socket_remote) => { Some(socket_remote.ip()) }
+                    _ => ipaddr_remote.ok()
+                }
+            };
+
+            match ip {
+                Some(ip) => {
+                    let ip: String = ip.to_string();
                     let ft = state
                         .geoip
                         .send(LookupIP {
@@ -96,7 +104,7 @@ fn handle_resume(req: HttpRequest<Arc<State>>) -> HttpResponse {
                         .map_err(|_| ());
                     req.server_settings().cpu_pool().spawn(ft).forget();
                 }
-                _ => {}
+                _ => { println!("Failed to parse {}", remote_host); }
             };
         }
         _ => {
