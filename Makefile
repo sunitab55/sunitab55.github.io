@@ -10,4 +10,11 @@ target/debug/backend: frontend/out $(BACKEND_FILES)
 	cargo build
 
 target/release/backend: frontend/out $(BACKEND_FILES)
+	cargo build --release
+
+target/x86_64-unknown-linux-musl/release/backend: frontend/out $(BACKEND_FILES)
 	cargo build --target x86_64-unknown-linux-musl --release
+
+
+publish: target/x86_64-unknown-linux-musl/release/backend
+	scp target/x86_64-unknown-linux-musl/release/backend root@souvik.me:/etc/nixos
