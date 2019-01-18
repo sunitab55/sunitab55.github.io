@@ -4,34 +4,9 @@ import Head from '../components/head';
 import Introduction from '../components/introduction';
 import SocialLinks from '../components/social';
 import { Jumbotron, Container } from 'reactstrap';
-import Particles from 'react-particles-js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/custom.css';
-
-
-const particlesConfig = {
-  particles: {
-    number: {
-      value: 20
-    },
-    color: {
-      value: "#ffffff"
-    },
-    line_linked: {
-      shadow: {
-        enable: true,
-        color: "#cc5500",
-        blur: 5
-      },
-      distance: 150
-    },
-    move: {
-      speed: 10.0
-    },
-    retina_detect: true
-  }
-};
 
 const Home = () => (
   <div>
