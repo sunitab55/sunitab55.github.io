@@ -17,4 +17,5 @@ target/x86_64-unknown-linux-musl/release/backend: frontend/out $(BACKEND_FILES)
 
 
 publish: target/x86_64-unknown-linux-musl/release/backend
+	ssh root@souvik.me "rm /etc/nixos/backend"
 	scp target/x86_64-unknown-linux-musl/release/backend root@souvik.me:/etc/nixos
