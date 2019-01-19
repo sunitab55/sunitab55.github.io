@@ -48,12 +48,16 @@ const BlogPost = props => {
           <Row>
             <Col className="text-center">
               <h1>CS373 Spring 2019: Souvik Banerjee - {props.title}</h1>
-              <img src="/static/swe-profile.png" />
             </Col>
           </Row>
         </Container>
       </Jumbotron>
       {sections}
+      <Row>
+        <Col className="text-center">
+          <img src="/static/swe-profile.png" />
+        </Col>
+      </Row>
     </Container>
   );
 };
