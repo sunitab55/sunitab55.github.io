@@ -21,6 +21,7 @@ use futures::future::Future;
 use mime_guess::guess_mime_type;
 use r2d2_sqlite::SqliteConnectionManager;
 use std::sync::Arc;
+use std::path::Path;
 
 mod api;
 mod db;
@@ -33,19 +34,21 @@ use self::geoip::{GeoIPExecutor, LookupIP};
 struct Asset;
 
 fn handle_embedded_file(path: &str) -> HttpResponse {
-    let canonical_path = if path.is_empty() {
-        "index.html"
-    } else if path == "resume" || path == "resume/" {
-        "resume/index.html"
-    } else {
-        path
+    let (mime_type, content) = match Asset::get(path) {
+        Some(content) => (guess_mime_type(path), Some(content)),
+        None => {
+            let path = Path::new(path).join("index.html");
+            (guess_mime_type(&path), Asset::get(&path.to_string_lossy()))
+        }
     };
-    match Asset::get(canonical_path) {
+
+    match content {
         Some(content) => HttpResponse::Ok()
             .header(
                 header::CONTENT_TYPE,
-                guess_mime_type(canonical_path).as_ref(),
+                mime_type.as_ref(),
             )
+            .header(header::CACHE_CONTROL, "7200")
             .body(Body::from_slice(content.as_ref())),
         None => HttpResponse::NotFound().body("404 Not Found"),
     }
