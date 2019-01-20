@@ -47,9 +47,14 @@ const BlogPost = props => {
         <Container>
           <Row>
             <Col className="text-center">
-              <h1>CS373 Spring 2019: Souvik Banerjee - {props.title}</h1>
+              <h1>CS373 Spring 2019: Souvik Banerjee</h1>
             </Col>
           </Row>
+          <Row>
+            <Col className="text-center">
+              <h2>{props.title}</h2>
+            </Col>
+            </Row>
         </Container>
       </Jumbotron>
       {sections}

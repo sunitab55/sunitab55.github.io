@@ -12,13 +12,10 @@ const Post = () => (
     <div className="main-bg">
       <div className="main">
         <BlogPost
-          title="Week 1"
-          nextPost="/swe/week-2"
+          title="Week 8"
+          previousPost="/swe/week-7"
+          nextPost="/swe/week-9"
           sections={[
-            (<Container className="text-left">
-               <Row className="text-center"><Col><h2>What are your expectations of the class?</h2></Col></Row>
-               <Row><Col><p></p></Col></Row>
-             </Container>),
             (<Container className="text-left">
                <Row className="text-center"><Col><h2>What did you do this past week?</h2></Col></Row>
                <Row><Col><p></p></Col></Row>

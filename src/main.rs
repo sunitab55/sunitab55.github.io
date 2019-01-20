@@ -48,7 +48,7 @@ fn handle_embedded_file(path: &str) -> HttpResponse {
                 header::CONTENT_TYPE,
                 mime_type.as_ref(),
             )
-            .header(header::CACHE_CONTROL, "7200")
+            .header(header::CACHE_CONTROL, "public, max-age=7200")
             .body(Body::from_slice(content.as_ref())),
         None => HttpResponse::NotFound().body("404 Not Found"),
     }
