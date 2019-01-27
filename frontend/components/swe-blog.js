@@ -32,11 +32,11 @@ const BlogPost = props => {
 
   let sections = props.sections.map((s) => (
     <Row>
-      <Col xs="2"></Col>
-      <Col xs="8">
+      <Col xs="0" sm="1" md="2"></Col>
+      <Col xs="12" sm="10" md="8">
         {s}
       </Col>
-      <Col xs="2"></Col>
+      <Col xs="0" sm="1" md="2"></Col>
     </Row>
   ));
 
