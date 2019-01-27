@@ -18,7 +18,7 @@ const Resume = () => (
 
         .resume-page {
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
       `}</style>
   </div>

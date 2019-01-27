@@ -2,6 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Jumbotron, Container, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import Media from 'react-media';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { solarizedDark } from 'react-syntax-highlighter/dist/styles/hljs';
 
 const BlogPost = props => {
   let previousNavLink = (props.previousPost ?
@@ -60,11 +63,23 @@ const BlogPost = props => {
       {sections}
       <Row>
         <Col className="text-center">
-          <img src="/static/swe-profile.png" />
+          <img src="/static/swe-profile.png" className="profile-picture"/>
         </Col>
       </Row>
+      <style jsx>{`
+      .profile-picture {
+        max-width: 100%;
+      }
+      `}</style>
     </Container>
   );
+};
+
+const CodeBlock = props => {
+  return (<Media query="(prefers-color-scheme: dark)">
+          { matches => matches ?  (<SyntaxHighlighter style={solarizedDark} {...props}>{props.children}</SyntaxHighlighter>)
+            : (<SyntaxHighlighter {...props}>{props.children}</SyntaxHighlighter>) }
+          </Media>);
 };
 
 BlogPost.propTypes = {
@@ -75,3 +90,4 @@ BlogPost.propTypes = {
 };
 
 export default BlogPost;
+export { CodeBlock };
