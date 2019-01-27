@@ -16,6 +16,7 @@
     "react-dom": "^16.6.0",
     "react-particles-js": "^2.3.0",
     "react-social-icons": "^4.1.0",
+    "react-syntax-highlighter": "^10.1.2",
     "reactstrap": "^7.0.2",
     "webpack": "^4.24.0"
   }
