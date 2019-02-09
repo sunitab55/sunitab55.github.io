@@ -23,7 +23,7 @@ const pickOfTheWeek = (
         <p><a href="https://www.levels.fyi/">levels.fyi</a> is a centralized place to find compensation information for top tech companies. You can compare levels across different companies and the salary/RSU/bonus structure for each level.</p>
       </li>
       <li>
-        <p><a href="https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/">Ten Rules for Negotiating</a> is a blog post written by <a href="https://haseebq.com">Haseeb Qureshi</a> on how to effectively negotiate with tech companies.</p>
+        <p><a href="https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/">Ten Rules for Negotiating</a> is a blog post written by <a href="https://haseebq.com">Haseeb Qureshi</a> on how to effectively negotiate with tech companies. This was an extremely valuable resource for me last fall as I was deciding on full-time offers.</p>
       </li>
       </ul>
     </p>
@@ -32,7 +32,7 @@ const pickOfTheWeek = (
 
 const pastWeek = (
   <div>
-    <p>This week I started to get more accustomed to my classes. I received a lot of assignments and I am slowly making progress on them. I started working on research more seriously. My research project has to do with improving the scalability of Ethereum, and I have been reading a lot of blog posts and research papers to try to understand the problem and the potential solutions.</p>
+    <p>This week I started to get more accustomed to my classes. I received a lot of assignments and I am slowly making progress on them. I also started working on research more seriously. My research project has to do with improving the scalability of Ethereum, and I have been reading a lot of blog posts and research papers to try to understand the problem and the potential solutions.</p>
   </div>
 );
 
@@ -64,7 +64,7 @@ I wish we could learn more about the tools we will be using, but at a deeper lev
 const experienceOfTheClassExercises = (
   <div>
     <p>
-      I really enjoy the in-class exercises. They provide instant feedback and it seems to be good practice for the exams. Applying the concepts you learn in class to real code makes it easier to remember later.
+      I really enjoy the in-class exercises. They provide instant feedback and seem to be good practice for the exams. Applying the concepts you learn in class to real code makes it easier to remember later.
     </p>
   </div>
 );
@@ -77,6 +77,7 @@ const Post = () => (
         <BlogPost
           title="Week 2"
           previousPost="/swe/week-1"
+          nextPost="/swe/week-3"
           sections={[
             (<Container className="text-left">
                <Row className="text-center"><Col><h2>What did you do this past week?</h2></Col></Row>
