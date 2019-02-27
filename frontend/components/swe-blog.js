@@ -35,11 +35,11 @@ const BlogPost = props => {
 
   let sections = props.sections.map((s) => (
     <Row>
-      <Col xs="0" sm="1" md="2" lg="3"></Col>
-      <Col xs="12" sm="10" md="8" lg="6">
+      <Col xs="0" sm="1" md="2" lg="2" xl="3"></Col>
+      <Col xs="12" sm="10" md="8" lg="8" xl="6">
         {s}
       </Col>
-      <Col xs="0" sm="1" md="2" lg="3"></Col>
+      <Col xs="0" sm="1" md="2" lg="2" xl="3"></Col>
     </Row>
   ));
 

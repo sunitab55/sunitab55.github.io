@@ -61,6 +61,7 @@ const Post = () => (
         <BlogPost
           title="Week 3"
           previousPost="/swe/week-2"
+          nextPost="/swe/week-4"
           sections={[
             (<Container className="text-left">
                <Row className="text-center"><Col><h2>What did you do this past week?</h2></Col></Row>
