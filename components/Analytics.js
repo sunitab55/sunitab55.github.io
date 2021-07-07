@@ -21,7 +21,7 @@ function Analytics(props) {
     if (typeof window === undefined) return;
     const { isInitialized } = analytics;
     if (!isInitialized) {
-      ReactGA.initialize("UA-73305012-1", { debug: true });
+      ReactGA.initialize("UA-73305012-1");
       ReactGA.pageview(Router.pathname);
       setAnalytics((prev) => ({
         ...prev,
