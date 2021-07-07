@@ -1,7 +1,8 @@
 .name {
   padding-bottom: 1em;
-  font-size: 52px;
+  font-size: 38px;
   font-weight: normal;
+  display: inline-block;
 }
 
 .subtitle {
@@ -16,7 +17,7 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
   .name {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid;
     border-bottom-color: rgba(0, 0, 0, 0.35);
     color: #0a0a0a;
   }
