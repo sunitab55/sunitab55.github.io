@@ -4,6 +4,7 @@ import React from "react";
 import Head from "../components/Head";
 import Introduction from "../components/Introduction";
 import SocialLinks from "../components/SocialLinks";
+import Analytics from "../components/Analytics";
 import { Jumbotron, Container } from "reactstrap";
 
 const Home = () => (
@@ -28,6 +29,7 @@ const Home = () => (
         </Jumbotron>
       </div>
     </div>
+    <Analytics trackingID="UA-73305012-1" />
   </div>
 );
 
