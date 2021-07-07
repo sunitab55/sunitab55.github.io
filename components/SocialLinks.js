@@ -13,13 +13,13 @@ const SocialLinks = (props) => (
         <SocialIcon url={props.linkedin} />
       </li>
       <li>
-        <SocialIcon bgColor="#7e7e7e" url={props.github} />
+        <SocialIcon bgColor="#6e6e6e" url={props.github} />
       </li>
       <li>
         <SocialIcon url={props.instagram} />
       </li>
       <li>
-        <SocialIcon url={props.email} />
+        <SocialIcon bgColor="#892304" url={props.email} />
       </li>
     </ul>
   </div>
