@@ -2,35 +2,43 @@ import ReactGA from "react-ga";
 import Router from "next/router";
 import React from "react";
 
+const AnalyticsContext = React.createContext();
+
 function Analytics(props) {
-  const { trackingID } = props;
   const [analytics, setAnalytics] = React.useState({
     isInitialized: false,
   });
 
   const handleRouteChange = (url) => {
-    ReactGA.set({ page: url });
     ReactGA.pageview(url);
   };
 
+  const logEvent = (value) => {
+    ReactGA.event(value);
+  };
+
   React.useEffect(() => {
+    if (typeof window === undefined) return;
     const { isInitialized } = analytics;
     if (!isInitialized) {
-      ReactGA.initialize(trackingID);
+      ReactGA.initialize("UA-73305012-1", { debug: true });
+      ReactGA.pageview(Router.pathname);
+      setAnalytics((prev) => ({
+        ...prev,
+        isInitialized: true,
+      }));
     }
     Router.events.on("routeChangeComplete", handleRouteChange);
-    setAnalytics((prev) => ({
-      ...prev,
-      isInitialized: true,
-    }));
 
     return () => {
       // clean up
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [trackingID]);
+  }, [analytics]);
 
-  return <div></div>;
+  return <AnalyticsContext.Provider value={{ logEvent }} {...props} />;
 }
 
-export default Analytics;
+const useTracking = () => React.useContext(AnalyticsContext);
+
+export { Analytics };

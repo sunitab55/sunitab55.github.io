@@ -1,15 +1,16 @@
 import styles from "../styles/Home.module.css";
 
 import React from "react";
-import Head from "../components/Head";
+import Head from "next/head";
 import Introduction from "../components/Introduction";
 import SocialLinks from "../components/SocialLinks";
-import Analytics from "../components/Analytics";
 import { Jumbotron, Container } from "reactstrap";
 
 const Home = () => (
   <div>
-    <Head title="Home" />
+    <Head>
+      <title>Souvik Banerjee</title>
+    </Head>
     <div className={styles["main-bg"]}>
       <div className={styles.main}>
         <Jumbotron className={styles.main_container}>
@@ -29,7 +30,6 @@ const Home = () => (
         </Jumbotron>
       </div>
     </div>
-    <Analytics trackingID="UA-73305012-1" />
   </div>
 );
 
