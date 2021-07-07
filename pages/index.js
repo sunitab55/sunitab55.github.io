@@ -15,7 +15,7 @@ const Home = () => (
           <Introduction
             name="Souvik Banerjee"
             subtitle="Software Engineer"
-            resumePath="/resume"
+            resumePath="/resume.pdf"
           />
           <br />
           <SocialLinks
