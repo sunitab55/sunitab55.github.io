@@ -9,8 +9,8 @@ function Analytics(props) {
   });
 
   const handleRouteChange = (url) => {
-    ReactGA.set({ page: url }, analytics.trackers);
-    ReactGA.pageview(url, analytics.trackers);
+    ReactGA.set({ page: url });
+    ReactGA.pageview(url);
   };
 
   React.useEffect(() => {
