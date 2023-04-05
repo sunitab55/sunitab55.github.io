@@ -9,7 +9,7 @@ import { Jumbotron, Container } from "reactstrap";
 const Home = () => (
   <div>
     <Head>
-      <title>Souvik Banerjee</title>
+      <title>Sunita Bhattacharya</title>
     </Head>
     <div className={styles["main-bg"]}>
       <div className={styles.main}>
