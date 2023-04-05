@@ -10,19 +10,19 @@ function Analytics(props) {
   });
 
   const handleRouteChange = (url) => {
-    ReactGA.pageview(url);
+    //ReactGA.pageview(url);
   };
 
   const logEvent = (value) => {
-    ReactGA.event(value);
+    //ReactGA.event(value);
   };
 
   React.useEffect(() => {
     if (typeof window === undefined) return;
     const { isInitialized } = analytics;
     if (!isInitialized) {
-      ReactGA.initialize("UA-73305012-1");
-      ReactGA.pageview(Router.pathname);
+      //ReactGA.initialize("UA-73305012-1");
+      //ReactGA.pageview(Router.pathname);
       setAnalytics((prev) => ({
         ...prev,
         isInitialized: true,

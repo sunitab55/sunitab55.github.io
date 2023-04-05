@@ -15,17 +15,17 @@ const Home = () => (
       <div className={styles.main}>
         <Jumbotron className={styles.main_container}>
           <Introduction
-            name="Souvik Banerjee"
-            subtitle="Software Engineer"
+            name="Sunita Bhattacharya"
+            subtitle="Data Analyst"
             resumePath="/resume.pdf"
           />
           <br />
           <SocialLinks
-            facebook="https://facebook.com/Souvik1997"
-            linkedin="https://www.linkedin.com/in/sb1997/"
-            github="https://github.com/souvik1997"
-            email="mailto:souvik1997@gmail.com"
-            instagram="https://www.instagram.com/souvik8765/"
+            facebook="https://www.facebook.com/Atinus.B"
+            linkedin="https://www.linkedin.com/in/atinusb/"
+            github="https://github.com/sunitab55"
+            email="mailto:sunitab55@gmail.com"
+            instagram="https://www.instagram.com/pengatinus/"
           />
         </Jumbotron>
       </div>
